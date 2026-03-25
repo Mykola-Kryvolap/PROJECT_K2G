@@ -13,3 +13,16 @@ def create_app():
 
     entry = tk.Entry(root, font=("Arial", 20), justify="right")
     entry.pack(fill="both", padx=10, pady=10)
+
+def click(value):
+        if value == "=":
+            result = calculate(entry.get())
+            entry.delete(0, tk.END)
+            entry.insert(tk.END, result)
+
+        elif value == "C":
+            entry.delete(0, tk.END)
+
+        else:
+            entry.insert(tk.END, value)
+            
