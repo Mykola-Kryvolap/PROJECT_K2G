@@ -14,7 +14,7 @@ def create_app():
     entry = tk.Entry(root, font=("Arial", 20), justify="right")
     entry.pack(fill="both", padx=10, pady=10)
 
-def click(value):
+    def click(value):
         if value == "=":
             result = calculate(entry.get())
             entry.delete(0, tk.END)
@@ -26,7 +26,7 @@ def click(value):
         else:
             entry.insert(tk.END, value)
 
-buttons = [
+    buttons = [
         ["7", "8", "9", "/"],
         ["4", "5", "6", "*"],
         ["1", "2", "3", "-"],
@@ -34,11 +34,10 @@ buttons = [
         ["C"]
     ]
 
-for row in buttons:
-    frame = tk.Frame(root)
-    frame.pack(expand=True, fill="both")
-
-    for btn in row:
-        b = tk.Button(frame, text=btn, font=("Arial", 16))
-        b.pack(side="left", expand=True, fill="both")
-        b.config(command=lambda t=btn: click(t))
+    for row in buttons:
+        frame = tk.Frame(root)
+        frame.pack(expand=True, fill="both")
+        for btn in row:
+            b = tk.Button(frame, text=btn, font=("Arial", 16))
+            b.pack(side="left", expand=True, fill="both")
+            b.config(command=lambda t=btn: click(t))
