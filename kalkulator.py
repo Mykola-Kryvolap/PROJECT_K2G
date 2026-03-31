@@ -25,4 +25,20 @@ def click(value):
 
         else:
             entry.insert(tk.END, value)
-            
+
+buttons = [
+        ["7", "8", "9", "/"],
+        ["4", "5", "6", "*"],
+        ["1", "2", "3", "-"],
+        ["0", ".", "=", "+"],
+        ["C"]
+    ]
+
+for row in buttons:
+    frame = tk.Frame(root)
+    frame.pack(expand=True, fill="both")
+
+    for btn in row:
+        b = tk.Button(frame, text=btn, font=("Arial", 16))
+        b.pack(side="left", expand=True, fill="both")
+        b.config(command=lambda t=btn: click(t))
