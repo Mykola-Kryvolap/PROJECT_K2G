@@ -41,3 +41,9 @@ def create_app():
             b = tk.Button(frame, text=btn, font=("Arial", 16))
             b.pack(side="left", expand=True, fill="both")
             b.config(command=lambda t=btn: click(t))
+
+return root
+
+if name == "__main__":
+    app = create_app()
+    app.mainloop()
