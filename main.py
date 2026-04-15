@@ -1,3 +1,3 @@
 from kalkulator import calculate
-from historia import get, clear
+from historia import get , clear
 
