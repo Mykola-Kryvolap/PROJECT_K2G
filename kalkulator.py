@@ -22,3 +22,15 @@ def calculate(expr):
                         result = a_val / (percent / 100)
                     add(f"{expr} = {result}")
                     return result
+
+
+        if expr_clean.endswith("%"):
+            result = float(expr_clean[:-1]) / 100
+            add(f"{expr} = {result}")
+            return result
+
+        open_b = expr.count("(")
+        close_b = expr.count(")")
+        expr += ")" * (open_b - close_b)
+
+
