@@ -13,5 +13,18 @@ def main():
         elif expr == "exit":
             print("Do widzenia!")
             break
+        elif expr == "help":
+            print("Operacje: + - * / ^ math.sqrt() %")
+            print("Komendy: history | clear | help | exit")
+        elif expr == "history":
+            hist = get()
+            if not hist:
+                print("Brak historii")
+            else:
+                for i, item in enumerate(hist, 1):
+                    print(f"{i}. {item}")
+        elif expr == "clear":
+            clear()
+            print("Historia wyczyszczona")
 
 
