@@ -6,3 +6,5 @@ def add(entry):
         _history.pop(0)
 def get():
     return list(_history)
+def clear():
+    _history.clear()
