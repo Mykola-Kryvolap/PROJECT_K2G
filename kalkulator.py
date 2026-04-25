@@ -33,4 +33,14 @@ def calculate(expr):
         close_b = expr.count(")")
         expr += ")" * (open_b - close_b)
 
+        result = eval(expr, {"math": math, "__builtins__": {}})
+        add(f"{expr} = {result}")
+        return result
+
+    except ZeroDivisionError:
+        raise ZeroDivisionError("Dzielenie przez zero!")
+    except Exception:
+        raise ValueError("Nieprawidlowe wyrazenie")
+
+
 
