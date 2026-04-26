@@ -27,3 +27,17 @@ class TestKalkulator(unittest.TestCase):
 
     def test_procent_odejmowanie(self):
         self.assertEqual(calculate("200-10%"), 180.0)
+
+    def test_dzielenie_przez_zero(self):
+        with self.assertRaises(ZeroDivisionError):
+            calculate("5/0")
+
+    def test_nieprawidlowe(self):
+        with self.assertRaises(ValueError):
+            calculate("abc")
+
+    def test_nawiasy(self):
+        self.assertEqual(calculate("(2+3)*4"), 20)
+
+if __name__ == "__main__":
+    unittest.main()
