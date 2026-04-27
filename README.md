@@ -1,3 +1,4 @@
+![CI](https://github.com/Mykola-Kryvolap/PROJECT_K2G/actions/workflows/ci.yml/badge.svg)
 # Kalkulator CLI
 
 Projekt grupowy — automatyzacja budowania oprogramowania.
