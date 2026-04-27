@@ -20,13 +20,14 @@ def main():
             hist = get()
             if not hist:
                 print("Brak historii")
+
             else:
                 for i, item in enumerate(hist, 1):
                     print(f"{i}. {item}")
         elif expr == "clear":
             clear()
             print("Historia wyczyszczona")
-                    else:
+        else:
             try:
                 print(calculate(expr))
             except Exception as e:
@@ -35,5 +36,6 @@ def main():
 if __name__ == "__main__":
     main()
 
+            
 
 
