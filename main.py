@@ -20,7 +20,7 @@ def main():
             hist = get()
             if not hist:
                 print("Brak historii")
-        else:
+            else:
                 for i, item in enumerate(hist, 1):
                     print(f"{i}. {item}")
         elif expr == "clear":
