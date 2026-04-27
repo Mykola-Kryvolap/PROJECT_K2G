@@ -26,5 +26,14 @@ def main():
         elif expr == "clear":
             clear()
             print("Historia wyczyszczona")
+                    else:
+            try:
+                print(calculate(expr))
+            except Exception as e:
+                print(f"Blad: {e}")
+
+if __name__ == "__main__":
+    main()
+
 
 
