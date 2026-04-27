@@ -15,3 +15,12 @@ python -m unittest testy.py
 - Pierwiastek: math.sqrt(9)
 - Procenty: 50%, 200+10%, 200-10%
 - Nawiasy: (2+3)*4
+
+
+## Przyklady
+>>> 2+2
+4
+>>> 200+10%
+220.0
+>>> math.sqrt(9)
+3.0
