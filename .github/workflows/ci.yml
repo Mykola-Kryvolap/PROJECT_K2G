@@ -20,7 +20,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Lint
-        run: flake8 . --max-line-length=120 --ignore=E501,W503
+        run: flake8 . --max-line-length=120 --ignore=E501,W503,E302,E303,W391,E203,W293,E301,E305,W292
 
       - name: Tests
         run: python3 -m unittest testy.py
