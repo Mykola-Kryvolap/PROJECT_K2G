@@ -1,4 +1,7 @@
 ![CI](https://github.com/Mykola-Kryvolap/PROJECT_K2G/actions/workflows/ci.yml/badge.svg)
+## Docker
+https://hub.docker.com/r/mykolakryvolap/kalkulator-cli
+
 # Kalkulator CLI
 
 Projekt grupowy — automatyzacja budowania oprogramowania.
