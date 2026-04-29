@@ -40,7 +40,7 @@ def calculate(expr):
     except ZeroDivisionError:
         raise ZeroDivisionError("Dzielenie przez zero!")
     except Exception:
-        raise ValueError("Nieprawidlowe wyrazenie")
+        raise ValueError("Nieprawidlowe wyrazenie"
 
 
 
